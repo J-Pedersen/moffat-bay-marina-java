@@ -1,0 +1,26 @@
+/* page content styling */
+.content {
+    box-sizing: border-box;
+    margin-top: 8.813rem;
+    padding-top: 2.5rem;
+    background-color: #dfded4; 
+  }
+  
+  .content h1 {
+  text-align: center;
+  padding-bottom: 1rem; 
+  }
+  
+  .content p {
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 4rem; 
+    margin-right: 4rem; 
+    }
+
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+    .breadcrumb {
+        display: none;
+    }
+}
+  /* end page content styling */

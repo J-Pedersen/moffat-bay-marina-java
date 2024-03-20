@@ -1,0 +1,43 @@
+/* 
+    CSD-460
+    Team Indigo
+    Moffat Bay Marina
+    
+    Team Members
+        Sam Crandall
+        Jacob Ives
+        Jeff Pedersen
+        Micah Smith 
+
+    Contributors to this Code
+        Jeff Pedersen (last update on 9-11-2023)
+*/
+
+/* waitlist page content styling */
+
+.content {
+    background-color: #dfded4;
+    box-sizing: border-box;
+    margin-top: 8.813rem;
+    padding-top: 2.5rem;    
+  }
+  
+  .content h1 {
+    padding-bottom: 1rem;
+    text-align: center;   
+  }
+  
+  .content p {    
+    margin-bottom: 1rem;
+    margin-left: 4rem; 
+    margin-right: 4rem;
+    text-align: left; 
+  }
+  
+  /* hides the breadcrumb on mobile and small tablets */
+  @media screen and (min-width: 360px) and (max-width: 1000px) {
+    .breadcrumb {
+        display: none;
+    }
+  }
+  /* end page content styling */

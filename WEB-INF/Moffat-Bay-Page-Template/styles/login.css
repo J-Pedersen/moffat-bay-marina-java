@@ -1,0 +1,107 @@
+/* login page content styling */
+.login-container {
+    position: absolute;
+    top: 150px;
+    right: 50%;
+    transform: translate(50%, 0);
+    width: 300px;
+    height: 360px;
+    margin: 3rem auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.7rem;
+    padding-bottom: 2rem;
+    border: 1px solid #313b5b;
+    background-color: #85a9cfaa;
+    border-radius: 1.5rem;
+    z-index: 99;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+}
+
+
+.login-container h1 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+}
+
+
+.form-group {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1rem;
+    color:#26282f;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+}
+
+.text-field {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #dfded4;
+    border: 1px solid #313b5b;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+}
+
+p {
+    margin-top: .2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2.5rem;
+    color: #26282f;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+}
+
+a {
+    text-decoration: none;
+    color: #014a7b;
+}
+
+a:hover {
+  color: #ff7700d0;
+}
+
+.submit-button {
+    width: 12rem;
+    height: 3rem;
+    background-color: #313b5b;
+    color: #dfded4;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 2.5rem;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.5));
+}
+
+.submit-button:hover {
+    background-color: #5d8c98;
+    color:#26282f;
+    border: 1px solid #313b5b;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+    .breadcrumb {
+        display: none;
+      }
+}
+  /* end login page content styling */

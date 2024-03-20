@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.30">
+        <title>Moffat Bay Marina</title>
+        <link rel="stylesheet" href="styles/normalize.css"> <!-- contains all styles resets -->
+        <link rel="stylesheet" href="styles/index.css"> <!-- contains all universal page styles -->
+        <link rel="stylesheet" href="styles/header.css"> <!-- contains all header specific styles -->
+        <link rel="stylesheet" href="styles/footer.css"> <!-- contains all footer specific styles -->
+        <link rel="stylesheet" href="styles/nav.css"> <!-- contains all nav bar specific styles -->
+        <link rel="stylesheet" href="styles/reservation.css"> <!-- contains all reservation page specific styles -->
+    </head>
+    <body>
+        <div class="wrapper"> <!-- page wrapper -->
+            <div class="header"> <!-- site header -->
+                <button class="menu-button" onclick="toggleMenu()" onmouseover="changeMenuImage('menu-hover.svg')" onmouseout="changeMenuImage('menu.svg')">
+                    <img src="images/menu.svg" alt="Menu" title="Menu" id="menu-image">
+                </button> <!-- end menu-button -->
+                <div class="logo-container"> <!-- container for the two styles of logos -->             
+                    <img class="default-logo" src="images/logo.svg" alt="Moffat Bay Marina"> <!-- logo SVG for larger tablets and desktops -->
+                    <img class="mobile-logo" src="images/mobile-logo.svg" alt="Moffat Bay Marina"> <!-- logo SVG for mobile devices and small tablets -->
+                </div> <!-- end logo-container -->
+                <a href="login.html" title="Account Login"> <!-- adds the link function to the account image -->
+                    <button class="account-button" onmouseover="changeAccountImage('account-hover.svg')" onmouseout="changeAccountImage('account.svg')"> <!-- adds button function to the account SVG -->
+                        <img src="images/account.svg" alt="Account" title="Account" id="account-image">                
+                    </button> <!-- end account-button -->
+                </a> <!-- end account image link function -->
+            </div> <!-- end header -->
+            <div class="nav-container"> <!-- navigation menu -->
+                <nav class="nav-menu">
+                    <a href="index.html" title="Home">Home</a>
+                    <a href="about.html" title="About Us">About Our Marina</a>
+                    <a href="registration.html" title="Registration">Registration</a>
+                    <a href="login.html" title="Account Login">Account Login</a>
+                    <a href="reservation.html" title="Slip Reservation">Slip Reservation</a>
+                    <a href="summary.html" title="Reservation Summary">Reservation Summary</a>
+                    <a href="lookup.html" title="Reservation Look Up">Reservation Look Up</a>
+                    <a href="waitlist.html" title="Waitlist Look Up">Wait List Look Up</a>
+                </nav>
+            </div> <!-- end navigation menu -->
+            <ul class="breadcrumb"> <!-- breadcrumb bar -->
+                <li><a href="index.html" title="Home Page">Home</a></li>
+                <li><a href="reservation.html" title="Slip Reservation">Slip Reservation</a></li>
+            </ul> <!-- end breadcrumb bar -->
+            <div class="content"> <!-- body content container -->
+                <div class="reservation-container">
+                    <form>
+                        <h1>Slip Reservation</h1>
+                        <div class="form-columns">
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label for="boat-length">Boat Length<span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <input type="text" id="boat-length" name="boatlength" required pattern="^\s*([6-9]|[1-4][0-9]|50)\s*$" title="Please enter length of 50 feet or less." maxlength="2" />
+                                        <p class="notice">(Please round up to the next foot of 50 feet or less)</p>
+                                    </div>
+                                </div> <!-- end form-group -->                                                               
+                                <div class="form-group">
+                                    <label for="boat-name">Boat Name<span class="required">*</span></label>
+                                    <input type="text" id="boat-name" name="boatname" class="text-field-xtend" required>
+                                </div> <!-- end form-group -->
+                                <div class="form-group">
+                                    <label for="start-date">Start Date<span class="required">*</span></label>
+                                    <input type="date" id="start-date" name="startdate" class="text-field-xtend" required>
+                                </div> <!-- end form-group -->
+                                <div class="form-group stack">
+                                    <button type="reset" class="clear-button" id="clear-button">Clear</button>
+                                    <button type="submit" class="submit-button" id="submit-button" alt="Submit" title="Submit">Submit</button>
+                                    <button type="button" class="waitlist-button" id="waitlist-button">Wait List</button>
+                                    <p id="require"><span class="required">*</span> = Required</p>
+                                </div>
+                                </div> <!-- end form-group stack --> 
+                            </div> <!-- end form-column --> 
+                        </div> <!-- end form-columns --> 
+                    </form>
+                </div> <!-- end reservation-container --> 
+            </div> <!-- end content -->        
+            <footer> <!-- site footer -->
+                <div class="footer-links"> <!-- container for footer links -->
+                    <a href="about.html" title="About Our Marina">ABOUT OUR MARINA</a> <!-- adds an about page link to the footer -->
+                    <div class="footer-divider">|</div> <!-- divider -->
+                    <div class="contact-footer left-foot">
+                            <p>Moffat Bay Marina</p>
+                            <p>(555)555-5555</p>
+                            <p>harbormaster@mbmarina.com</p>                           
+                    </div> <!-- end contact-footer -->
+                    <div class="footer-divider">|</div> <!-- divider -->
+                    <div class="contact-footer">
+                    <p>123 Moffat Bay Dr. <br>Joviesda Island, WA</p>
+                    </div> <!-- end contact-footer -->
+                </div> <!-- end footer-links -->
+            </footer> <!-- end footer -->
+            <script src="script/index.js" type="text/javascript"></script>
+        </div> <!-- end wrapper -->
+    </body>
+</html>
